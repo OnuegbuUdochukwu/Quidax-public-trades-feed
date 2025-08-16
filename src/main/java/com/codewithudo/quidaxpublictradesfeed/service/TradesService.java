@@ -17,7 +17,7 @@ public class TradesService {
     }
 
     public List<Trade> getRecentTrades(String market) {
-        String url = "https://api.quidax.com/api/v1/trades/" + market;
+        String url = "https://app.quidax.io/api/v1/trades/" + market;
 
         TradesResponse response = restTemplate.getForObject(url, TradesResponse.class);
 
